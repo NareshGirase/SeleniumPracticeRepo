@@ -29,6 +29,13 @@ public class NavigateConcepts {
 		
 		Thread.sleep(5000);
 		
+		driver.navigate().back();
+		System.out.println(driver.getTitle());
+		
+		Thread.sleep(5000);
+		
+		driver.navigate().refresh();
+		
 		driver.quit();
 		
 
