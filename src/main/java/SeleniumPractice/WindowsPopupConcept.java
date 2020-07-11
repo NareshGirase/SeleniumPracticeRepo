@@ -26,7 +26,7 @@ public class WindowsPopupConcept {
 		Thread.sleep(3000);
 		Set<String> handles = driver.getWindowHandles();
 		
-		Iterator<String> it = handles.iterator();//Iterator always stored in the string format thats we have stored in string
+		Iterator<String> it = handles.iterator(); //Iterator always stored in the string format thats we have stored in string
 		
 		
 		String ParentID = it.next();
@@ -34,10 +34,6 @@ public class WindowsPopupConcept {
 		
 		String ChildID = it.next();
 		System.out.println("Child window ID id :"+ChildID );
-		
-		//String ChildID1 = it.next();
-		//System.out.println("Child window ID id :"+ChildID1 );
-		
 		
 		driver.switchTo().window(ChildID);// driver switch to child window
 		System.out.println(driver.getTitle());
@@ -47,25 +43,12 @@ public class WindowsPopupConcept {
 		driver.switchTo().window(ParentID);//driver switch to parent window
 		System.out.println(driver.getTitle());
 		
-		//Thread.sleep(5000);
-		//driver.close();
-		
 		WebElement link1= driver.findElement(By.linkText("Good PopUp #4"));
 		link1.click();
 		
 		Set<String> handles1 = driver.getWindowHandles();
 		
 		Iterator<String> it1 = handles1.iterator();
-		
-		/*if(!ParentID.equals(ChildID))
-		{
-		driver.switchTo().window(ChildID);
-
-		System.out.println(driver.switchTo().window(ChildID).getTitle());
-
-		driver.close();
-		}*/
-
 		
 		String ParentID1 = it1.next();
 		System.out.println("Parent window ID id :"+ParentID1 );
