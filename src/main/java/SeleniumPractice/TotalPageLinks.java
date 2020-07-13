@@ -22,10 +22,11 @@ public class TotalPageLinks {
 		List<WebElement> LinksList = driver.findElements(By.tagName("a"));
 		System.out.println("Total Number of Links:" + LinksList.size());
 
+		
 		for (int i = 0; i < LinksList.size(); i++) {
 			String text = LinksList.get(i).getText();
-			if(text.isEmpty()){
-				System.out.println("No text");
+			if(text.equals(null)||text.isEmpty()){
+				continue;
 			}else
 			{
 				System.out.println(text);
