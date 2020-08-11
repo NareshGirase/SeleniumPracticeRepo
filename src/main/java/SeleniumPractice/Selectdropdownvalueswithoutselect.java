@@ -32,6 +32,12 @@ public class Selectdropdownvalueswithoutselect {
 		selectdropdownvalueswithoutSelect( driver, year , "1991");
 		
 	}
+	/**
+	 * This method is use to select the values from drop down without using select class
+	 * @param driver
+	 * @param Locator
+	 * @param Value
+	 */
 
 	public static void selectdropdownvalueswithoutSelect(WebDriver driver, String Locator, String Value) {
 

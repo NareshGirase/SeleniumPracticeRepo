@@ -28,9 +28,9 @@ public class GetDropDownValues {
 		String date ="21-Aug-1991";
 		String[] dateval = date.split("-");
 		
-		DropDownHandling.selectValueFromDropDown(day, dateval[0]);
-		DropDownHandling.selectValueFromDropDown(month, dateval[1]);
-		DropDownHandling.selectValueFromDropDown(year, dateval[2]);
+		DropDownConcept.selectValueFromDropDown(day, dateval[0]);
+		DropDownConcept.selectValueFromDropDown(month, dateval[1]);
+		DropDownConcept.selectValueFromDropDown(year, dateval[2]);
 		
 		ArrayList<String> daylist = getDropDownValues(day);
 		System.out.println(daylist);

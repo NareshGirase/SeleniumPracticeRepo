@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DropDownHandling {
+public class DropDownConcept {
 
 	public static void main(String[] args) {
 		
@@ -39,6 +39,11 @@ public class DropDownHandling {
 		
 		}
 	
+	/**
+	 * This method is use to select the values from drop down on the basis of given text
+	 * @param element
+	 * @param value
+	 */
 	public static void selectValueFromDropDown(WebElement element, String value){
 		
 		Select select = new Select(element);
@@ -46,5 +51,6 @@ public class DropDownHandling {
 		
 		
 	}
-
+	
+	
 }
